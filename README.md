@@ -11,8 +11,8 @@ docker run -d \
   --privileged \
   --mount type=bind,source=/lib/modules,destination=/lib/modules,readonly=true \
   --mount type=bind,source=/etc/resolv.conf,destination=/etc/resolv.conf,readonly=true \
-  -v `pwd`/mke01.yaml:/mke.yaml:ro \
-  -v `pwd`/containerd.toml:/etc/mke/containerd.toml:ro \
+  -v ${PWD}/mke01.yaml:/mke.yaml:ro \
+  -v ${PWD}/containerd.toml:/etc/mke/containerd.toml:ro \
   -v mke01_root:/root \
   -v mke01_etc-cni:/etc/cni \
   -v mke01_opt-cni:/opt/cni \
@@ -24,6 +24,6 @@ docker run -d \
   -v mke01_var-lib-mke:/var/lib/mke \
   -v mke01_var-log:/var/log \
   --tmpfs /run \
-  mbentley/mke:v0.4.0 \
+  mbentley/mke:v0.5.0 \
   server --enable-worker --config /mke.yaml
 ```
