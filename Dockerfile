@@ -3,7 +3,7 @@ MAINTAINER Matt Bentley <mbentley@mbentley.net>
 
 RUN apk add --no-cache coreutils findutils iptables
 
-COPY mke-v0.5.0-amd64 /usr/local/bin/mke
+COPY mke-v0.6.0-amd64 /usr/local/bin/mke
 COPY entrypoint.sh /entrypoint.sh
 
 #RUN addgroup -g 500 mke &&\
