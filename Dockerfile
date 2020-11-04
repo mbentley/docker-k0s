@@ -3,7 +3,11 @@ MAINTAINER Matt Bentley <mbentley@mbentley.net>
 
 RUN apk add --no-cache coreutils findutils iptables
 
-COPY mke-v0.6.0-amd64 /usr/local/bin/mke
+RUN apk add --no-cache wget &&\
+  wget -O /usr/local/bin/mke "https://github.com/k0sproject/k0s/releases/download/v0.6.0/mke-v0.6.0-amd64" &&\
+  chmod +x /usr/local/bin/mke &&\
+  apk del wget
+
 COPY entrypoint.sh /entrypoint.sh
 
 #RUN addgroup -g 500 mke &&\
