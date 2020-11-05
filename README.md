@@ -1,6 +1,8 @@
 # mbentley/k0s
 
-Docker image for Mirantis Kubernetes Engine based on alpine:latest
+Docker image for [k0s - Zero Friction Kubernetes](https://github.com/k0sproject/k0s)
+
+## Example usage
 
 ```
 docker run -d \
@@ -26,4 +28,10 @@ docker run -d \
   --tmpfs /run \
   mbentley/k0s:v0.6.0 \
   k0s server --enable-worker --config /k0s.yaml
+```
+
+## get kubeconfig
+
+```
+docker exec -it k0s-01 cat /var/lib/k0s/pki/admin.conf
 ```
