@@ -1,1 +1,1 @@
-Dockerfile-v0.6.0
+Dockerfile.v0.6.0
