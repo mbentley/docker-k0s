@@ -4,7 +4,7 @@ MAINTAINER Matt Bentley <mbentley@mbentley.net>
 RUN apk add --no-cache coreutils findutils iptables
 
 RUN apk add --no-cache wget &&\
-  wget -O /usr/local/bin/k0s "https://github.com/k0sproject/k0s/releases/download/v0.7.0-beta3/k0s-v0.7.0-beta3-amd64" &&\
+  wget -O /usr/local/bin/k0s "https://github.com/k0sproject/k0s/releases/download/v0.7.0/mke-v0.7.0-amd64" &&\
   chmod +x /usr/local/bin/k0s &&\
   apk del wget
 
