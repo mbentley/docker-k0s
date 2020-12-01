@@ -24,7 +24,7 @@ docker run -d \
   -v k0s-01_var-lib-k0s:/var/lib/k0s \
   -v k0s-01_var-log:/var/log \
   --tmpfs /run \
-  mbentley/k0s:v0.7.0 \
+  mbentley/k0s:v0.8.0 \
   k0s server --enable-worker
 ```
 
@@ -60,7 +60,7 @@ docker run -d \
   -v k0s-01_var-lib-k0s:/var/lib/k0s \
   -v k0s-01_var-log:/var/log \
   --tmpfs /run \
-  mbentley/k0s:v0.7.0 \
+  mbentley/k0s:v0.8.0 \
   k0s server --enable-worker --config /k0s.yaml
 ```
 
