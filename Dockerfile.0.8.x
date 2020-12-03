@@ -6,7 +6,7 @@ RUN apk add --no-cache coreutils findutils iptables
 
 # download the k0s release
 RUN apk add --no-cache wget &&\
-  wget -O /usr/local/bin/k0s "https://github.com/k0sproject/k0s/releases/download/v0.8.0/k0s-v0.8.0-amd64" &&\
+  wget -O /usr/local/bin/k0s "https://github.com/k0sproject/k0s/releases/download/v0.8.1/k0s-v0.8.1-amd64" &&\
   chmod +x /usr/local/bin/k0s &&\
   apk del wget
 
