@@ -2,6 +2,11 @@
 
 Docker image for [k0s - Zero Friction Kubernetes](https://github.com/k0sproject/k0s)
 
+## Tags for `amd64`
+
+* `latest`, `0.8` - k0s 0.8.x (currently 0.8.1) - [Dockerfile.0.8.x](Dockerfile.0.8.x)
+* `0.7` - k0s 0.7.x (currently 0.7.0) - [Dockerfile.0.7.x](Dockerfile.0.7.x)
+
 ## Example usage
 
 ```
@@ -24,11 +29,11 @@ docker run -d \
   -v k0s-01_var-lib-k0s:/var/lib/k0s \
   -v k0s-01_var-log:/var/log \
   --tmpfs /run \
-  mbentley/k0s:v0.8.0 \
+  mbentley/k0s:0.8 \
   k0s server --enable-worker
 ```
 
-# Cleanup
+## Cleanup
 
 ```
 docker stop k0s-01
@@ -60,7 +65,7 @@ docker run -d \
   -v k0s-01_var-lib-k0s:/var/lib/k0s \
   -v k0s-01_var-log:/var/log \
   --tmpfs /run \
-  mbentley/k0s:v0.8.0 \
+  mbentley/k0s:0.8 \
   k0s server --enable-worker --config /k0s.yaml
 ```
 

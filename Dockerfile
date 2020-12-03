@@ -1,1 +1,1 @@
-Dockerfile.v0.8.0
+Dockerfile.0.8.x
