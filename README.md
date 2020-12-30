@@ -4,7 +4,8 @@ Docker image for [k0s - Zero Friction Kubernetes](https://github.com/k0sproject/
 
 ## Tags for `amd64`
 
-* `latest`, `0.8` - k0s 0.8.x (currently 0.8.1) - [Dockerfile.0.8.x](Dockerfile.0.8.x)
+* `latest`, `0.9` - k0s 0.9.x (currently 0.9.1) - [Dockerfile.0.9.x](Dockerfile.0.9.x)
+* `0.8` - k0s 0.8.x (currently 0.8.1) - [Dockerfile.0.8.x](Dockerfile.0.8.x)
 * `0.7` - k0s 0.7.x (currently 0.7.0) - [Dockerfile.0.7.x](Dockerfile.0.7.x)
 
 ## Example usage
