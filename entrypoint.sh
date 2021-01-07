@@ -16,4 +16,4 @@ then
   sed 's/-//g' < /proc/sys/kernel/random/uuid > /etc/machine-id
 fi
 
-exec "${@}"
+exec tini -- "${@}"

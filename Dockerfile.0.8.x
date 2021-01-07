@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER Matt Bentley <mbentley@mbentley.net>
 
 # install prereqs for k0s
-RUN apk add --no-cache coreutils findutils iptables
+RUN apk add --no-cache coreutils findutils iptables tini
 
 # download the k0s release
 RUN apk add --no-cache wget &&\

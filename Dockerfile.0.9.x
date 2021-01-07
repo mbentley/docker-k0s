@@ -5,7 +5,7 @@ MAINTAINER Matt Bentley <mbentley@mbentley.net>
 ARG K0S_VERSION=0.9.1
 
 # install prereqs for k0s
-RUN apk add --no-cache coreutils findutils iptables
+RUN apk add --no-cache coreutils findutils iptables tini
 
 # download the k0s release
 RUN apk add --no-cache wget &&\

@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Matt Bentley <mbentley@mbentley.net>
 
-RUN apk add --no-cache coreutils findutils iptables
+RUN apk add --no-cache coreutils findutils iptables tini
 
 RUN apk add --no-cache wget &&\
   wget -O /usr/local/bin/k0s "https://github.com/k0sproject/k0s/releases/download/v0.7.0/k0s-v0.7.0-amd64" &&\
