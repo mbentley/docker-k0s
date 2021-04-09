@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER Matt Bentley <mbentley@mbentley.net>
 
 # set k0s version
-ARG K0S_VERSION=0.11.1
+ARG K0S_VERSION=0.13.0
 
 # install prereqs for k0s
 RUN apk add --no-cache coreutils findutils iptables tini

@@ -4,7 +4,9 @@ Docker image for [k0s - Zero Friction Kubernetes](https://github.com/k0sproject/
 
 ## Tags for `amd64`
 
-* `latest`, `0.11` - k0s 0.11.x (currently 0.11.0) - [Dockerfile.0.11.x](Dockerfile.0.11.x)
+* `latest`, `0.13` - k0s 0.13.x (currently 0.11.0) - [Dockerfile.0.13.x](Dockerfile.0.13.x)
+* `0.12` - k0s 0.12.x (currently 0.11.1) - [Dockerfile.0.12.x](Dockerfile.0.12.x)
+* `0.11` - k0s 0.11.x (currently 0.11.1) - [Dockerfile.0.11.x](Dockerfile.0.11.x)
 * `0.10` - k0s 0.10.x (currently 0.10.0) - [Dockerfile.0.10.x](Dockerfile.0.10.x)
 * `0.9` - k0s 0.9.x (currently 0.9.0) - [Dockerfile.0.9.x](Dockerfile.0.9.x)
 * `0.8` - k0s 0.8.x (currently 0.8.1) - [Dockerfile.0.8.x](Dockerfile.0.8.x)
@@ -32,7 +34,7 @@ docker run -d \
   -v k0s-01_var-lib-k0s:/var/lib/k0s \
   -v k0s-01_var-log:/var/log \
   --tmpfs /run \
-  mbentley/k0s:0.11 \
+  mbentley/k0s:0.13 \
   k0s server --enable-worker
 ```
 
@@ -68,7 +70,7 @@ docker run -d \
   -v k0s-01_var-lib-k0s:/var/lib/k0s \
   -v k0s-01_var-log:/var/log \
   --tmpfs /run \
-  mbentley/k0s:0.11 \
+  mbentley/k0s:0.13 \
   k0s server --enable-worker --config /k0s.yaml
 ```
 
